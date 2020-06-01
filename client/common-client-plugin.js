@@ -2,7 +2,7 @@ function register ({ registerHook, peertubeHelpers }) {
   registerHook({
     target: 'action:router.navigation-end',
     handler: async ({ path }) => {
-      const component = document.querySelector('.top-menu');
+      const component = document.querySelector('.menu-wrapper');
 
       const c = await peertubeHelpers.getSettings('custom_links_markdown')
       
