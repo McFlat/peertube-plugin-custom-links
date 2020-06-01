@@ -5,7 +5,6 @@ function register ({ registerHook, peertubeHelpers }) {
       const component = document.querySelector('.top-menu');
 
       const c = await peertubeHelpers.getSettings()
-
       const panel = document.createElement('div');
       panel.setAttribute('class', 'panel-block');
       //const title = document.createElement('div');
