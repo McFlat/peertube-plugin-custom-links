@@ -1,7 +1,7 @@
 {
   "name": "peertube-plugin-custom-links",
   "description": "PeerTube plugin that allows you to add custom links on the bottom of the menu",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "author": "McFlat",
   "bugs": "https://github.com/McFlat/peertube-plugin-custom-links/issues",
   "clientScripts": [
