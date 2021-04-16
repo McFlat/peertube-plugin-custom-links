@@ -7,7 +7,8 @@ function register ({ registerHook, peertubeHelpers }) {
       panel.setAttribute('class', 'custom-links');
       if (c['custom_links_markdown']) {
         const html = await peertubeHelpers.markdownRenderer.enhancedMarkdownToHTML(c['custom_links_markdown'])
-        panel.innerHTML = html;
+        panel.innerHTML = html.replace(/_blank/g,"_self");
+	//panel.innerHTML = html.replaceAll("_blank","_self");
       }
       setInterval(async function(){
         if (document.querySelector('.top-menu .custom-links') === null && c['custom_links_markdown']) {
